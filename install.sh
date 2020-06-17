@@ -2,6 +2,8 @@
 
 DOTPATH=~/dotfiles
 
+cd $DOTPATH
+
 for f in _??*
 do
     DOTNAME=`echo $f | sed -e 's/_/./'` 
