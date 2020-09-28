@@ -39,6 +39,10 @@ nnoremap k gk
 " " シンタックスハイライトの有効化
 syntax enable
 
+" " 現在の列を強調表示（コマンド化）
+nnoremap <Leader>c :<C-u>setlocal cursorcolumn<CR>
+nnoremap <Leader>v :<C-u>setlocal cursorcolumn!<CR>
+
 " 検索系
 " " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set ignorecase
@@ -52,3 +56,4 @@ set wrapscan
 set hlsearch
 " " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
